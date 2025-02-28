@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.hotelsearch2h.controllers.RegisterController">
+    <children>
+        <Label layoutX="100.0" layoutY="110" text="Name:"/>
+        <Label layoutX="100" layoutY="160.0" text="Email: "/>
+        <Label layoutX="100" layoutY="210.0" text="Phone:"/>
+        <Label layoutX="100" layoutY="260.0" text="Password"/>
+        <TextField fx:id="txtName" layoutX="200.0" layoutY="100.0" prefHeight="26.0" prefWidth="198.0"/>
+        <TextField fx:id="txtEmail" layoutX="200.0" layoutY="150.0" prefHeight="26.0" prefWidth="197.0"/>
+        <TextField fx:id="txtPhone" layoutX="200.0" layoutY="200.0" prefHeight="26.0" prefWidth="198.0"/>
+        <TextField fx:id="txtPassword" layoutX="200.0" layoutY="250.0" prefHeight="26.0" prefWidth="198.0"/>
+        <Label layoutX="243.0" layoutY="37.0" text="Register">
+            <font>
+                <Font name="System Bold" size="24.0"/>
+            </font>
+        </Label>
+        <Button fx:id="btnRegister" layoutX="254.0" layoutY="312.0" mnemonicParsing="false"
+                onAction="#registerButtonClicked" text="Create Account"/>
+        <Label fx:id="txtError" layoutX="275.0" layoutY="356.0" text="" textFill="#e40808"/>
+    </children>
+</AnchorPane>
